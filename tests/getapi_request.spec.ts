@@ -12,7 +12,7 @@ test('get booking by id', async ({request}) => {
     expect(response.status()).toBe(200);
 });
 
-test.only('get booking by name', async ({request}) => {
+test('get booking by name', async ({request}) => {
 
     const firstname = 'Jim';
     const lastname = 'Brown';
