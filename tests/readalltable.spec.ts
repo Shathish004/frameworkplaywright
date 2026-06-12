@@ -31,7 +31,7 @@ let hasmorepages = true;
 
 });
 
-test.only('reading tables', async ({page})=>{
+test('reading tables', async ({page})=>{
     await page.goto('https://datatables.net/examples/basic_init/zero_configuration.html');
     const drpdown = page.locator('#dt-length-0');
     drpdown.selectOption({label:'25'});
