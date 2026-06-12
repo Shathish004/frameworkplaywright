@@ -1,0 +1,2 @@
+✓ Product page loaded: 14.1-inch Laptop
+✓ Product price is visible

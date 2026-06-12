@@ -1,1 +1,1 @@
-[]
+[{"name":"Jenkins","type":"jenkins","url":"http://localhost:8080/","buildOrder":16,"buildName":"playwrightproject1 #16","buildUrl":"http://localhost:8080/job/playwrightproject1/16/display/redirect","reportName":"AllureReport","reportUrl":"http://localhost:8080/job/playwrightproject1/16/allure"}]

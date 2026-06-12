@@ -1,3 +1,6 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","11938","logo visible","","2026-06-10","failed","2026-06-10","","report.spec.ts","",""
+"","16176","Navigate to demo shop, verify welcome message, and search for laptop","","2026-06-11","passed","2026-06-11","Demo Web Shop - Search and Product Verification","demowebshop.spec.ts","",""
+"","18722","Verify product details after search and purchase workflow","","2026-06-11","passed","2026-06-11","Demo Web Shop - Search and Product Verification","demowebshop.spec.ts","",""
+"","4144","Shopping Site","","2026-06-11","failed","2026-06-11","","visualtesting\visual.spec.ts","",""
 "","13554","Search Laptop visible","","2026-06-10","failed","2026-06-10","","report.spec.ts","",""
+"","11938","logo visible","","2026-06-10","failed","2026-06-10","","report.spec.ts","",""
