@@ -1,0 +1,3 @@
+✓ Welcome message is visible
+✓ Search results contain "14.1-inch Laptop"
+✓ Search completed successfully

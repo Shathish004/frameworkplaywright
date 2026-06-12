@@ -1,0 +1,8 @@
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="10.242273">
+<testsuite name="report.spec.ts" timestamp="2026-06-10T07:19:16.949Z" hostname="" tests="2" failures="0" skipped="0" time="12.945" errors="0">
+<testcase name="logo visible" classname="report.spec.ts" time="5.7">
+</testcase>
+<testcase name="Search Laptop visible" classname="report.spec.ts" time="7.245">
+</testcase>
+</testsuite>
+</testsuites>
