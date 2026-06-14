@@ -3,3 +3,9 @@ Genarate Playwright typescripts:
 2. Verify Welcome to our store is visible
 3. In Seach textbox search with 14.1-inch Laptop
 4. Verify the result
+ggg
+
+gggg
+gggg
+
+g
