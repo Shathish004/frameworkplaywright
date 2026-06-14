@@ -2,4 +2,4 @@ Genarate Playwright typescripts:
 1. Navigate to https://demowebshop.tricentis.com/
 2. Verify Welcome to our store is visible
 3. In Seach textbox search with 14.1-inch Laptop
-4. Verify the result ennnathu solla
+4. Verify the result
