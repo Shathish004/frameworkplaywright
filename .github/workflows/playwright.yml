@@ -26,7 +26,7 @@ jobs:
       run: npx playwright install --with-deps
 
     - name: Run Playwright tests
-      run: npx playwright test "readalltable.spec.ts" -g "reading\s+tables$"npx playwright test
+      run: npx playwright test "jsonval.spec.ts"
       #run: npx playwright test --grep "@sanity"
       #run: npm run test:sanity
     
