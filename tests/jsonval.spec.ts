@@ -1,13 +1,12 @@
-import {test,expect} from '@playwright/test'
-import fs from 'fs';
+import { test, expect } from '@playwright/test'
+import { readJsonFile } from './utils'
 
 // const logindata: string[][]=[
 //                     ['smithjohn@123.com','pass1234','valid'],
 //                     ['abc@abc.com', 'pass1234','Invalid']
 // ];
 
-const jsonpath = 'testdata/data.json';
-const logindata: any = JSON.parse(fs.readFileSync(jsonpath, 'utf-8'));
+const logindata = readJsonFile<Array<{ email: string; password: string; status: string }>>('testdata/data.json')
 
 
 test.describe('login test data', () => {
