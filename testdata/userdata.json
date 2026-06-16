@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "email": "smithjohn@123.com",
+      "password": "pass1234",
+      "status": "valid"
+    },
+    {
+      "email": "abc@abc.com",
+      "password": "pass1234",
+      "status": "Invalid"
+    }
+  ]
+}

@@ -6,11 +6,17 @@ import { readJsonFile } from './utils'
 //                     ['abc@abc.com', 'pass1234','Invalid']
 // ];
 
-const logindata = readJsonFile<Array<{ email: string; password: string; status: string }>>('testdata/data.json')
-
+//const logindata = readJsonFile<Array<{ email: string; password: string; status: string }>>('testdata/userdata.json')
+const logindata = readJsonFile<{
+    users: Array<{
+    email: string;
+    password: string;
+    status: string;
+  }>;
+}>('testdata/userdata.json');
 
 test.describe('login test data', () => {
-  for (const { email, password, status } of logindata) {
+  for (const { email, password, status } of logindata.users) {
 
     test(`login test ${email} and ${password}`, async ({ page }) => {
       await page.goto('https://demowebshop.tricentis.com/')
