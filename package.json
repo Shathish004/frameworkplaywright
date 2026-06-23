@@ -2,7 +2,9 @@
   "name": "frameworkplaywright",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test tests/Product.spec.ts --headed"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -12,10 +14,11 @@
     "@playwright/mcp": "^0.0.76",
     "@playwright/test": "^1.60.0",
     "@types/node": "^25.9.2",
-    "allure-playwright": "^3.9.0"
+    "allure-playwright": "^3.10.0"
   },
   "dependencies": {
     "@axe-core/playwright": "^4.11.3",
+    "@playwright/cli": "^0.1.14",
     "csv-parse": "^7.0.0",
     "luxon": "^3.7.2",
     "xlsx": "^0.18.5"

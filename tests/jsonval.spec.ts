@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test'
-import { readJsonFile } from './utils'
+import { readJsonFile } from '../utils/utils'
 
 // const logindata: string[][]=[
 //                     ['smithjohn@123.com','pass1234','valid'],

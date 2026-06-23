@@ -1,0 +1,12 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('https://www.google.com/');
+  await page.getByRole('combobox', { name: 'Search' }).click();
+  await page.getByRole('combobox', { name: 'Search' }).fill('testing software');
+  await page.goto('https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dtesting%2Bsoftware%26sca_esv%3D25926d3c99fa4024%26source%3Dhp%26ei%3DpC40aq6RFK2QnesP37SCkAk%26iflsig%3DAFdpzrgAAAAAajQ8tNMENKUb1RLYs0P-eK58Eh-d1LRZ%26ved%3D0ahUKEwiu88vlq5GVAxUtSGcHHV-aAJIQ4dUDCC4%26uact%3D5%26oq%3Dtesting%2Bsoftware%26gs_lp%3DEgdnd3Mtd2l6IhB0ZXN0aW5nIHNvZnR3YXJlMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEjzRFDVBljOPXAFeACQAQCYAd4BoAGTEqoBBjYuMTAuMrgBA8gBAPgBAZgCF6AC_xOoAgrCAgoQABgDGI8BGOoCwgIIEAAYgAQYsQPCAgsQABiABBixAxiDAcICDhAAGIAEGIoFGLEDGIMBwgIIEC4YgAQYsQPCAg4QLhiABBiKBRixAxiDAcICBRAuGIAEwgIREC4YgAQYsQMYgwEYxwEY0QPCAg4QLhiABBixAxjHARjRA8ICBxAAGIAEGArCAgcQABiABBgNmAMW8QVvLU7cAbAkXZIHBjkuMTIuMqAHgGeyBwY0LjEyLjK4B7ETwgcIMi0xNi42LjHIB7YBgAgB%26sclient%3Dgws-wiz%26sei%3Dsi40avrGHvLm2roP1KKd0Q4&q=EhAkBQIB4BEAtLhp-9Ug7ysUGLLd0NEGIjDQvwNulEY8xDvzw341OE6OESQRYyuWxad9ZiACWUXqBEQJitNHzEdGOQee6CvlsZEyAVJaAUM');
+  await page.locator('iframe[name="a-dckpm8y01jy9"]').contentFrame().getByRole('checkbox', { name: 'I\'m not a robot' }).click();
+  await page.goto('https://www.google.com/search?q=testing+software&sca_esv=25926d3c99fa4024&source=hp&ei=pC40aq6RFK2QnesP37SCkAk&iflsig=AFdpzrgAAAAAajQ8tNMENKUb1RLYs0P-eK58Eh-d1LRZ&ved=0ahUKEwiu88vlq5GVAxUtSGcHHV-aAJIQ4dUDCC4&uact=5&oq=testing+software&gs_lp=Egdnd3Mtd2l6IhB0ZXN0aW5nIHNvZnR3YXJlMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEjzRFDVBljOPXAFeACQAQCYAd4BoAGTEqoBBjYuMTAuMrgBA8gBAPgBAZgCF6AC_xOoAgrCAgoQABgDGI8BGOoCwgIIEAAYgAQYsQPCAgsQABiABBixAxiDAcICDhAAGIAEGIoFGLEDGIMBwgIIEC4YgAQYsQPCAg4QLhiABBiKBRixAxiDAcICBRAuGIAEwgIREC4YgAQYsQMYgwEYxwEY0QPCAg4QLhiABBixAxjHARjRA8ICBxAAGIAEGArCAgcQABiABBgNmAMW8QVvLU7cAbAkXZIHBjkuMTIuMqAHgGeyBwY0LjEyLjK4B7ETwgcIMi0xNi42LjHIB7YBgAgB&sclient=gws-wiz&sei=si40avrGHvLm2roP1KKd0Q4');
+  await page.getByRole('link', { name: 'Introduction to Software' }).click();
+  await expect(page.getByRole('link', { name: 'geeksforgeeks', exact: true })).toBeVisible();
+});

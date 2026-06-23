@@ -1,0 +1,15 @@
+https://conduit-api.bondaracademy.com/api/users/login
+{
+  tags: [
+    'Test',
+    'Blog',
+    'Git',
+    'YouTube',
+    'Coding',
+    'Slack',
+    'Bondar Academy',
+    'Zoom',
+    'GitHub',
+    'Value-Focused'
+  ]
+}
